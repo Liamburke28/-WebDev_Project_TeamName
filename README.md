@@ -3,7 +3,7 @@
 <html>  
 
 <head>
-    <title> Anime website </title>
+     Anime website 
 </head>
 <body> 
 <h1>Anime website</h1>
