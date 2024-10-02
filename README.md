@@ -8,7 +8,7 @@
 <body> 
 <h1>Anime website</h1>
 </body>
-
+<h2> This is a super fun and vibrant anime website for Sofia Martinez to capture the sprit of the anime fandom</h2>
 
 
 </html>
