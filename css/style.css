@@ -39,6 +39,7 @@ body {
   text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 .toolbar li a:hover:not(.home) {
   background-color: #111111;
 }
@@ -52,3 +53,6 @@ body {
   background-color:#c4aed1;
   font-size:18px
 }
+=======
+.toolbar li a:hover:not(.home) 
+>>>>>>> Stashed changes
