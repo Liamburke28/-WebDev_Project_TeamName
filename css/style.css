@@ -39,9 +39,7 @@ body {
   text-decoration: none;
 }
 
-.toolbar li a:hover:not(.home) {
-  background-color: #111111;
-}
+
 
 .text{
   position:absolute;
@@ -51,8 +49,4 @@ body {
   right:75px;
   background-color:#c4aed1;
   font-size:18px
-}
-
-.titleh1{
-  text-align: center;
 }
