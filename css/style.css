@@ -41,3 +41,14 @@ body {
 
 .toolbar li a:hover:not(.home) {
   background-color: #111111;
+}
+
+.text{
+  position:absolute;
+  margin-top:100px;
+  text-align:left;
+  left:75px;
+  right:75px;
+  background-color:#c4aed1;
+  font-size:18px
+}
