@@ -6,22 +6,33 @@ h2{
   font-family: 'Times New Roman', Times, serif;
 }
 
-nav{
-  background-color:#12c6d3 ;
-  overflow: hidden;
+.nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-nav a{
-  float: left;
-  color: #f2f2f2;
+.toolbar {
+  border:5px solid #03d7fc;
+  border-width:5px ;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  background-color: #a503fc; 
+}
+
+.toolbar li {
+  display: inline;
+}
+
+.toolbar a {
+  display: inline-block;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 30px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-nav a:hover{
-  background-color: #ddd;
-  color: black;
-
-}
+.toolbar li a:hover:not(.home) {
+  background-color: #111111;
