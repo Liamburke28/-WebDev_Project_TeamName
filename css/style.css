@@ -1,9 +1,14 @@
 h1{
-  color:green;
+  color:black;
+  
 }
 
 h2{
   font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: blanchedalmond;
 }
 
 .nav{
