@@ -1,10 +1,15 @@
 h1{
   color:black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 
 h2{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
