@@ -44,6 +44,10 @@ body {
   text-decoration: none;
 }
 
+.toolbar li a:hover:not(.home) {
+  background-color: #111111;
+}
+
 
 
 .text{
@@ -70,7 +74,7 @@ body {
 
 #email{
   position: absolute;
-  top:195px;
+  top:190px;
   right: 1210px;
 }
 
