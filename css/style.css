@@ -115,3 +115,32 @@ footer {
   color: #fff;
 }
 
+#product-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.add-to-cart {
+  background-color: #e60012;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
