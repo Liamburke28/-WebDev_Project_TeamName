@@ -31,11 +31,84 @@
                 <input type="text" id="EmailAddress" name="EmailAddress" required>
                 <div class="error" id="EmailAddresserror">Please enter your Email Address</div>
             </form>
+        
+        <form id="contactForm">
+            <div class="form-section">
+                <label for="contactMethod">Preferred Contact Method</label>
+                <select id="contactMethod" name="contactMethod" required>
+                    <option value="">Select a method</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="none">None</option>
+                </select>
+                <div id="contactMethodError" class="error"></div>
+            </div>
+
+            <br>
+            <div class="form-section">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <div id="messageError" class="error"></div>
+            </div>
         </ul>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
         <footer>
             <p>&copy; 2024 Anime Haven. All rights reserved.</p>
         </footer>
     </div>
+
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            let isValid = true;
+            const fullName = document.getElementById('fullName').value;
+            const emailAddress = document.getElementById('EmailAddress').value;
+            const contactMethod = document.getElementById('contactMethod').value;
+            const message = document.getElementById('message').value;
+
+            // Clear previous error messages
+            document.getElementById('fullNameError').textContent = '';
+            document.getElementById('EmailAddresserror').textContent = '';
+            document.getElementById('contactMethodError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+
+            // Validate Full Name
+            if (!fullName) {
+                document.getElementById('fullNameError').textContent = 'Please enter your full name.';
+                isValid = false;
+            }
+
+            // Validate Email Address
+            if (!emailAddress || !/\S+@\S+\.\S+/.test(emailAddress)) {
+                document.getElementById('EmailAddresserror').textContent = 'Please enter a valid email address.';
+                isValid = false;
+            }
+
+            // Validate Preferred Contact Method
+            if (!contactMethod) {
+                document.getElementById('contactMethodError').textContent = 'Please select a contact method.';
+                isValid = false;
+            }
+
+            // Validate Message
+            if (!message) {
+                document.getElementById('messageError').textContent = 'Please enter a message.';
+                isValid = false;
+            }
+
+            // If the form is valid, you can submit or process the form
+            if (isValid) {
+                alert('Form submitted successfully!');
+                // Optionally, you can send the form data to a server here
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
