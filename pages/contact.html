@@ -1,41 +1,41 @@
-
 <!DOCTYPE html>
 
-<html>  
+<html>
 
 <head>
     <title> Anime Haven </title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body> 
 
-<div class = "nav">
-<ul class = "toolbar">
-    <li><a href="/Index.html">Index</a></li>
-    <li><a class = "home" href ="contact.html">Contact us</a></li>
-    <li><a href = "about.html">About us</a></li>
-    <li><a href = "product.html">Products</a></li>
+<body>
 
-</ul>
-</div>
-<div class = "text">
-<h1><center>Contact us</center></h1>
-<ul>
-<h2><b>Phone number</b></h2>
-<li>234-9876-5400</li>
-<img id = "phone" src = "/media/phone.png" alt = "phone image" width = "50" height="50">
+    <div class="nav">
+        <ul class="toolbar">
+            <li><a href="/Index.html">Index</a></li>
+            <li><a class="home" href="contact.html">Contact us</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="product.html">Products</a></li>
 
-<h2><b>Email</b></h2>
-<li>AnimeWebsite@gmail.com</li>
-<img id = "email" src = "/media/email.png" alt = "email icon" width = "50" height = "50">
-
-<h2><b>Fax</b></h2>
-<li>1-234-567-8900</li>
-<img id = "fax" src = "/media/fax.png" alt = "fax icon" width = "50" height = "50">
-</ul>
-<footer>
-    <p>&copy; 2024 Anime Haven. All rights reserved.</p>
-</footer>
-</div>
+        </ul>
+    </div>
+    <div class="text">
+        <h1>
+            <center>Contact us</center>
+        </h1>
+        <ul>
+            <form id="contactForm">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <div class="error" id="fullNameError">Please enter your full name.</div>
+                <label for="EmailAddress">Email Address</label>
+                <input type="text" id="EmailAddress" name="EmailAddress" required>
+                <div class="error" id="EmailAddresserror">Please enter your Email Address</div>
+            </form>
+        </ul>
+        <footer>
+            <p>&copy; 2024 Anime Haven. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
+
 </html>
